@@ -1,26 +1,16 @@
 #include<stdio.h>
 
-int main (){
+int main(){
+	int C;
+	float F;
 	
-	int x;
-	int ans;
-	int z;
-	
-	printf("enter of x value:");
-	scanf("%d",&x);
-	
-	int y;
-	
-	
-	printf("enter of  y value:");
-	scanf("%d",&y);
-	
-	printf("enter of  z value:");
-	scanf("%d",&z);
+	printf("Enter The Degree Celsius :");
+	scanf("%d",&C);
+	 
+	 F = (9/5)*C + 32;
+	 
+	 printf("F :%.2f",F);
 	
 	
-	ans = (x*x*x) + (y*y*y) + (z*z*z) + (3*(x+y)*(y+z)*(z+x));
-	
-	printf("%d",ans);
 	return 0;
 }

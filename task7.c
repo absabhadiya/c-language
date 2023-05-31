@@ -1,26 +1,20 @@
 #include<stdio.h>
 
-int main (){
+int main(){
 	
-	int x;
-	int ans;
-	int z;
+	int b_s,hrs,da,ta;
+	float ans;
 	
-	printf("enter of x value:");
-	scanf("%d",&x);
-	
-	int y;
-	
-	
-	printf("enter of  y value:");
-	scanf("%d",&y);
-	
-	printf("enter of  z value:");
-	scanf("%d",&z);
-	
-	
-	ans =  (x*x) + (y*y) + (z*z) + (2*(x*y)+(y*z)+(z*x));
-	
-	printf("%d",ans);
+	printf("Enter The Value Of Base Salary :");
+	scanf("%d",&b_s);
+	printf("Enter The Value Of HRS :");
+	scanf("%d",&hrs);
+	printf("Enter The Value Of  DA :");
+	scanf("%d",&da);
+	printf("Enter The Value Of TA :");
+	scanf("%d",&ta);
+	ans = (hrs)*b_s/100 + (da)*b_s/100 + (ta)*b_s/100 + b_s;
+	printf("ans : %.0f",ans);
+
 	return 0;
 }
