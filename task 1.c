@@ -1,19 +1,34 @@
 #include<stdio.h>
-int main (){
+
+int main(){
 	
-	int x;
-	int ans;
+	int a,b,c;
 	
-	printf("enter of x value:");
-	scanf("%d",&x);
+	printf("value A: ");
+	scanf("%d",&a);
 	
-	int y;
+	printf("value B: ");
+	scanf("%d",&b);
 	
+	printf("value C: ");
+	scanf("%d",&c);
+
 	
-	printf("enter of  y value:");
-	scanf("%d",&y);
-	
-	ans = (x*x) + (2*x*y) + (y*y);
-	
-	printf("  %d",ans);
+if(a<b){
+		if(a<c){
+					printf("A is min");
+			}
+		else{
+					printf("C is min");
+			}	
+    	}
+	else{
+		if(b<c){
+					printf("B is min");
+				}
+		else{
+					printf("C is min");
+		    }
+		}	
+	return 0;	
 }

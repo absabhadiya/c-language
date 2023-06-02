@@ -1,21 +1,56 @@
 #include<stdio.h>
 
-int main (){
+int main(){
 	
-	int x;
-	int ans;
+	int a,b,c,d;
 	
-	printf("enter of x value:");
-	scanf("%d",&x);
+	printf("value A: ");
+	scanf("%d",&a);
 	
-	int y;
+	printf("value B: ");
+	scanf("%d",&b);
 	
+	printf("value C: ");
+	scanf("%d",&c);
 	
-	printf("enter of  y value:");
-	scanf("%d",&y);
+	printf("value D: ");
+	scanf("%d",&d);
 	
-	ans = (x*x) - (2*x*y) + (y*y);
-	
-	printf("%d",ans);
-	return 0;
+	if(a>b){
+		if(a>c){
+			if(a>d){
+					printf("A is max");
+		        	}
+			else{
+					printf("D is max");
+				}
+			}
+		else{
+			if(c>d){
+					printf("C is max");
+			    	}
+			else{
+					printf("D is max");
+				}
+			}	
+	}
+	else{
+		if(b>c){
+			if(b>d){
+					printf("B is max");
+				}
+			else{
+					printf("D is max");
+			}
+		}
+		else{
+			if(c>d){
+					printf("C is max");
+			      }
+			else{
+					printf("D is max");
+				}
+			}	
+	    }
+	return 0;	
 }
