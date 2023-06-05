@@ -2,33 +2,18 @@
 
 int main(){
 	
-	int a,b,c;
+	int a,b;
 	
-	printf("value A: ");
+	printf("enter A:");
 	scanf("%d",&a);
 	
-	printf("value B: ");
+	printf("enter B:");
 	scanf("%d",&b);
 	
-	printf("value C: ");
-	scanf("%d",&c);
-
+	a>b ? prinf("A is max") :  prinf("B is max");
 	
-if(a<b){
-		if(a<c){
-					printf("A is min");
-			}
-		else{
-					printf("C is min");
-			}	
-    	}
-	else{
-		if(b<c){
-					printf("B is min");
-				}
-		else{
-					printf("C is min");
-		    }
-		}	
-	return 0;	
+	return 0;
+	
+	
+	
 }

@@ -1,133 +1,26 @@
 #include<stdio.h>
 
+#include<stdio.h>
+
 int main(){
 	
-	int a,b,c,d,e;
+	int a,b,c,d;
 	
-	printf("value A: ");
+	printf("enter A:");
 	scanf("%d",&a);
 	
-	printf("value B: ");
+	printf("enter B:");
 	scanf("%d",&b);
 	
-	printf("value C: ");
+   	printf("enter C:");
 	scanf("%d",&c);
 	
-	printf("value D: ");
+	printf("enter D:");
 	scanf("%d",&d);
 	
-	printf("value E: ");
-	scanf("%d",&e);
+	a>b ? a>c ? a>d ? printf("A is max") :  printf("D is max") :c>d ? printf("c is max") : printf(" D is max") : b>c ? b>d ?  printf("B is max") : printf("D is max") :c>d ? printf("c is max") : printf(" D is max");
 	
-	if(a<b){
-		if(a<c){
-			if(a<d){
-				if(a<e){
-					printf("A is min");
-				}
-				else{
-					printf("E is min");
-				}
-			}
-			else{
-				if(d<e){
-					printf("D is min");
-				}
-				else{
-					printf("E is min");
-				}
-			}
-		}
-		else{
-			if(c<d){
-				if(c<e){
-					printf("C is min");
-				}
-				else{
-					printf("E is min");
-				}
-			}
-			else{
-				if(d<e){
-					printf("D is min");
-				}
-				else{
-					printf("E is min");
-				}
-			}
-		}	
-	}
-	else{
-			if(b<c){
-			if(b<d){
-				if(b<e){
-					printf("B is min");
-				}
-				else{
-					printf("E is min");
-				}
-			}
-			else{
-				if(d<e){
-					printf("D is min");
-				}
-				else{
-					printf("E is min");
-				}
-			}
-		}
-		else{
-			if(c<d){
-				if(c<e){
-					printf("C is min");
-				}
-				else{
-					printf("E is min");
-				}
-			}
-			else{
-				if(d<e){
-					printf("D is min");
-				}
-				else{
-					printf("E is min");
-				}
-			}
-		}	
-	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	return 0;
 	
 	
 	
