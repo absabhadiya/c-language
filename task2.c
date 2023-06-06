@@ -1,17 +1,18 @@
 #include<stdio.h>
-int main(){
+
+int main (){
 	
-	printf(" \t*\t*\t*\t*\t*\t*\t*\n\n\n");
+	  int a;
+	  printf("enter a number :");
+	  scanf("%d",&a);
+	  
+	  if(a%2==0){
+	  	printf("value is even");
+	  }
 	
-	printf(" *\t*\t*\t*\t*\t*\t*\t*\n\n");
-	
-	printf(" *\t \t*\t \t \t \t \t*\n\n");
-	
-	printf(" *\t \t*\t \t*\t*\t*\t*\n\n");
-	
-	printf(" *\t \t*\t \t*\t \t*\t*\n\n");
-	
-	printf(" *\t*\t*\t*\t*\t*\t*\t*\n\n");
-	
-	return 0;
+	  else{
+	  
+	  	printf("value is odd");
+	  }
 }
+
