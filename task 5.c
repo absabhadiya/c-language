@@ -1,81 +1,37 @@
 #include<stdio.h>
+int main()
+{
+	int unit;
+	float amount, total_amount, surcharge;
 
-int main(){
-	
-	char a;
-	printf("enter char : ");
-	scanf("%c",&a);
-	
-	switch(a){
-		
-	 case 'J':
-	 printf("January");
-	 break;
-	 
-	  case 'F':
-	 printf(" February");
-	 break;
-	 
-	  case 'M':
-	 printf("March");
-	 break;
-	 
-	  case 'A':
-	 printf("April");
-	 break;
-	 
-	  case 'm':
-	 printf("May");
-	 break;
-	 
-	  case 'j':
-	 printf("june");
-	 break;
-	 
-	  case 'l':
-	 printf("July");
-	 break;
-	 
-	  case 'a':
-	 printf("August");
-	 break;
-	 
-	  case 'S':
-	 printf("September");
-	 break;
-	 
-	  case 'O':
-	 printf("October");
-	 break;
-	 
-	  case 'N':
-	 printf("November ");
-	 break;
-	 
-	  case 'D':
-	 printf(" December");
-	 break;
-	 
-	 default:
-	 printf("invalid ! ");
-	 break;
-	   
-	   return 0;
+	/* Input unit consumed from user */
+	printf("Enter total Units consumed: ");
+	scanf("%d",&unit);
+
+	/* Calculate electricity bill according to given conditions */
+	if(unit <= 50)
+	{
+		amount = unit * 0.50;
 	}
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
+	else if(unit <= 150)
+	{
+		amount = 25 + (unit-50)*0.75;
+	}
+	else if(unit <= 250)
+	{
+		amount = 100 + (unit-150)*1.20;
+	}
+	else
+	{
+		amount = 220 + (unit-250)*1.50;
+	}
+
+	/* Calculate total electricity bill
+       after adding surcharge */
+	surcharge = amount * 0.20;
+	total_amount = amount + surcharge;
+
+	printf("Your Electric city Bill = %.2f",total_amount);
+
 	return 0;
 }
