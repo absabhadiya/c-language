@@ -1,21 +1,15 @@
 #include<stdio.h>
 
 int main (){
+	int i = 1;
+	int n ;
+	printf("enter value:");
+	scanf("%d",&i);
+	while(i>=n){
+		printf("%d\n",i);
+		i--;
+	}
 	
-	int x;
-	int ans;
 	
-	printf("enter of x value:");
-	scanf("%d",&x);
-	
-	int y;
-	
-	
-	printf("enter of  y value:");
-	scanf("%d",&y);
-	
-	ans =  (x*x*x) - (y*y*y) - ((3*x*y)*(x+y));
-	
-	printf("%d",ans);
 	return 0;
 }

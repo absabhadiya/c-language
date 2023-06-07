@@ -1,27 +1,15 @@
 #include<stdio.h>
 
-#include<stdio.h>
-
-int main(){
+int main (){
+	int i = 1;
+	int n ,sum=0;
+	printf("enter value:");
+	scanf("%d",&n);
+	while(i<=n){
+		printf("%d\n",i);
+		i++;
+	}
 	
-	int a,b,c,d;
-	
-	printf("enter A:");
-	scanf("%d",&a);
-	
-	printf("enter B:");
-	scanf("%d",&b);
-	
-   	printf("enter C:");
-	scanf("%d",&c);
-	
-	printf("enter D:");
-	scanf("%d",&d);
-	
-	a>b ? a>c ? a>d ? printf("A is max") :  printf("D is max") :c>d ? printf("c is max") : printf(" D is max") : b>c ? b>d ?  printf("B is max") : printf("D is max") :c>d ? printf("c is max") : printf(" D is max");
 	
 	return 0;
-	
-	
-	
 }

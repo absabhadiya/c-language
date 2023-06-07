@@ -2,16 +2,16 @@
 
 int main (){
 	int i = 1;
-	int n;
+	int n,sum=1;
 	printf("enter value:");
 	scanf("%d",&n);
 	while(i<=n){
-	 if ( i%2 ==0)
-		printf("%d\n",i);
+	  sum=sum*i;
+		
 		i++;
 	
 	}
-
+printf("sum:%d",sum,n);
 	
 	return 0;
 }

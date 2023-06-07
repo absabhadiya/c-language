@@ -1,17 +1,15 @@
 #include<stdio.h>
 
 int main (){
-	int i = 1;
-	int n;
-	printf("enter value:");
-	scanf("%d",&n);
+	int i = 2000;
+	int n = 3000 ;
+
 	while(i<=n){
-	 if ( i%2 ==0)
+		if(i%4==0)
 		printf("%d\n",i);
 		i++;
-	
 	}
-
+	
 	
 	return 0;
 }
